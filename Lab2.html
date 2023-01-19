@@ -497,10 +497,26 @@ for(i in 1:folds) {
 <div id="finalize-model" class="section level1">
 <h1>Finalize model</h1>
 <pre class="r"><code>final_mdl &lt;- lm(f2, data = penguins_clean)</code></pre>
-<p>Our final model:</p>
-<p>‘r equatiomatic::extract_eq(final_mdl, wrap = TRUE)’</p>
-<p>And with coefficients: ‘r equatiomatics::extract_eq(final_mdl, wrap =
-TRUE, use coefs= TRUE)’</p>
+<p>Our final model: <span class="math display">\[
+\begin{aligned}
+\operatorname{mass} &amp;= \alpha + \beta_{1}(\operatorname{bill\_l}) +
+\beta_{2}(\operatorname{bill\_d}) + \beta_{3}(\operatorname{flip\_l})\ +
+\\
+&amp;\quad \beta_{4}(\operatorname{species}_{\operatorname{Chinstrap}})
++ \beta_{5}(\operatorname{species}_{\operatorname{Gentoo}}) +
+\beta_{6}(\operatorname{sex}_{\operatorname{male}}) + \epsilon
+\end{aligned}
+\]</span></p>
+<p>and with coefficients in place: <span class="math display">\[
+\begin{aligned}
+\operatorname{\widehat{mass}} &amp;= -1460.99 +
+18.2(\operatorname{bill\_l}) + 67.22(\operatorname{bill\_d}) +
+15.95(\operatorname{flip\_l})\ - \\
+&amp;\quad 251.48(\operatorname{species}_{\operatorname{Chinstrap}}) +
+1014.63(\operatorname{species}_{\operatorname{Gentoo}}) +
+389.89(\operatorname{sex}_{\operatorname{male}})
+\end{aligned}
+\]</span></p>
 </div>
 
 

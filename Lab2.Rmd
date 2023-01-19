@@ -142,11 +142,10 @@ final_mdl <- lm(f2, data = penguins_clean)
 ```
 
 Our final model:
+`r equatiomatic::extract_eq(mdl2, wrap = TRUE)`
 
-'r equatiomatic::extract_eq(final_mdl, wrap = TRUE)'
-
-And with coefficients:
-'r equatiomatics::extract_eq(final_mdl, wrap = TRUE, use coefs= TRUE)'
+and with coefficients in place:
+`r equatiomatic::extract_eq(mdl2, wrap = TRUE, use_coefs = TRUE)`
 
 
 
